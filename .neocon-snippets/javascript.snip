@@ -1,0 +1,39 @@
+snippet require
+alias re
+  require('${1}');
+
+snippet alerttest
+alias alt
+  alert(${1:'test'});
+
+snippet hoge
+alias hh
+  console.log(${1:'hoge'});
+
+snippet consoletest
+alias cot
+  console.log(${1:'test'});
+
+snippet gulp
+  gulp.task('${1}', function () {
+    ${2}
+  });
+
+snippet todo
+alias td
+  // TODO(thrbrd) ${1}
+
+snippet browsersync
+alias bsync
+  gulp.task('webserver:connect', function () {
+    bsync({
+      server: {
+        baseDir: 'dist/'
+      }
+    });
+  });
+
+snippet constructor
+alias con
+  constructor () {
+  }
